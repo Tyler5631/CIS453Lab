@@ -1,28 +1,30 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import {HashRouter, Route} from "react-router-dom";
 import './App.css';
+import VisitHistory from "./History/VisitHistory";
+import PaymentInfo from "./PaymentInfo/PaymentInfo";
+import Preferences from "./Preferences/Preferences";
+import List from "./MassList/List";
+import LeftNav from "./leftBanner/LeftNav";
+import RightBanner from "./rightBanner/RightBanner";
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div className="App">
+                <HashRouter>
+                    <div className="content">
+                        <LeftNav/>
+                        <Route exact path="/" component={List}/>
+                        <Route path="/history" component={VisitHistory}/>
+                        <Route path="/paymentInfo" component={PaymentInfo}/>
+                        <Route path="/preferences" component={Preferences}/>
+                        <RightBanner/>
+                    </div>
+                </HashRouter>
+            </div>
+        );
+    }
 }
 
 export default App;

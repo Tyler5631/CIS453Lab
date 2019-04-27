@@ -1,0 +1,7 @@
+.upcoming {
+    border-top: 4px solid black;
+    position: relative;
+    display: inline-block;
+    margin-top: 32px;
+    width: 420px;
+}

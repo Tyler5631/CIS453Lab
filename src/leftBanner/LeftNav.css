@@ -1,0 +1,35 @@
+.leftNav {
+    border: 1px solid black;
+    width: 420px;
+    height: 500px;
+    position: relative;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    position: relative;
+    margin-left: 21px;
+    font-size: 56px;
+}
+
+.profile {
+    position: relative;
+    display: inline-block;
+}
+
+.icon {
+    margin-left: 25px;
+}
+
+.user {
+    text-decoration: underline;
+    font-size: 36px;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.links > li {
+    margin-top: 34px;
+    font-size: 22px;
+    list-style: none;
+}
