@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an interactive local massage therapist scheduling application. This allows users to schedule services from professions at a fraction of the cost it would to do it in a salon. We do this by connecting massage therapists to customers in the local area. You can see the professionals and the services they offer and decide upon their services and availability.
 
 ## Available Scripts
 
